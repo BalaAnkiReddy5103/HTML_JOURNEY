@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Color & Box Properties</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F4F6F9;
+            margin: 20px;
+        }
+        div{
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #4122f2de;
+            border-radius: 10px;
+        }
+
+
+        h1 {
+            text-align: center;
+            color: #263A5B;
+             
+        }
+
+        .section {
+            padding: 20px;
+            margin: 20px ;
+            border-radius: 10px;
+        }
+
+        .color1 {
+            background-color: lightblue;
+            border: 3px solid blue;
+        }
+
+        .color1 h2 {
+            color: red;
+        }
+
+        .color1 p {
+            color: green;
+        }
+
+        .color2 {
+            background-color: #E8DAEF;
+            border: 3px solid #8E44AD;
+        }
+
+        .color2 h2 {
+            color: #FF0000;
+        }
+
+        .color2 p {
+            color: #0000FF;
+        }
+
+        .color3 {
+            background-color: rgb(255, 240, 220);
+            border: 3px solid rgb(255, 140, 0);
+        }
+
+        .color3 h2 {
+            color: rgb(255, 0, 0);
+        }
+
+        .color3 p {
+            color: rgb(0, 100, 200);
+        }
+
+        .color4 {
+            background-color: rgba(0, 150, 255, 0.15);
+            border: 3px solid rgba(0, 100, 200, 0.7);
+        }
+
+        .color4 h2 {
+            color: rgba(255, 0, 0, 0.7);
+        }
+
+        .color4 p {
+            color: rgba(0, 100, 0, 0.6);
+        }
+
+        .color5 {
+            background-color: hsl(120, 50%, 90%);
+            border: 3px solid hsl(120, 100%, 30%);
+        }
+
+        .color5 h2 {
+            color: hsl(0, 100%, 50%);
+        }
+
+        .color5 p {
+            color: hsl(240, 100%, 40%);
+        }
+
+        .color6 {
+            background-color: hsla(280, 80%, 60%, 0.15);
+            border: 3px solid hsla(280, 80%, 40%, 0.7);
+        }
+
+        .color6 h2 {
+            color: hsla(0, 100%, 50%, 0.8);
+        }
+
+        .color6 p {
+            color: hsla(120, 100%, 25%, 0.7);
+        }
+
+        .foot1 {
+            text-align: center;
+            background-color: #263A5B;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+
+        /* Box Model Styling */
+        .half{
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #f222ccde;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #263A5B;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #3498DB;
+            border-radius: 10px;
+        }
+
+        .box1 {
+            width: 250px;
+            background-color: #D6EAF8;
+            padding: 20px;
+            border: 5px solid #2980B9;
+            margin: 25px;
+            box-sizing: content-box;
+        }
+
+        .box2 {
+            width: 250px;
+            background-color: #D5F5E3;
+            padding: 30px;
+            border: 8px dashed #239B56;
+            margin: 35px;
+            box-sizing: border-box;
+        }
+
+        .box3 {
+            width: 300px;
+            background-color: #FADBD8;
+            padding: 15px 35px;
+            border: 6px double #C0392B;
+            margin: 45px;
+            box-sizing: content-box;
+        }
+
+        h2 {
+            color: #263A5B;
+        }
+
+        .explanation {
+            background-color: #FFF3CD;
+            padding: 20px;
+            border-left: 5px solid #F39C12;
+            margin-top: 30px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #015ef4;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div >
+            <h1>CSS Color Properties</h1>
+
+            <div class="section color1">
+                <h2>1. Color Names</h2>
+                <p>This section uses named colors.</p>
+                <p>Example: red, blue, green.</p>
+            </div>
+
+            <div class="section color2">
+                <h2>2. HEX Colors</h2>
+                <p>This section uses HEX color values.</p>
+                <p>Example: #FF0000, #0000FF.</p>
+            </div>
+
+            <div class="section color3">
+                <h2>3. RGB Colors</h2>
+                <p>This section uses RGB color values.</p>
+                <p>Example: rgb(255, 0, 0).</p>
+            </div>
+
+            <div class="section color4">
+                <h2>4. RGBA Colors</h2>
+                <p>This section uses RGBA color values.</p>
+                <p>Example: rgba(255, 0, 0, 0.5).</p>
+            </div>
+
+            <div class="section color5">
+                <h2>5. HSL Colors</h2>
+                <p>This section uses HSL color values.</p>
+                <p>Example: hsl(0, 100%, 50%).</p>
+            </div>
+
+            <div class="section color6">
+                <h2>6. HSLA Colors</h2>
+                <p>This section uses HSLA color values.</p>
+                <p>Example: hsla(0, 100%, 50%, 0.5).</p>
+            </div>
+
+            <footer class="foot1">
+                <p>CSS Color Properties Practice</p>
+            </footer>
+    </div>
+    <br><br><br><br>
+
+
+
+<div class="half">
+     <h1>CSS Box Model</h1>
+
+    <div class="container">
+
+        <h2>Box 1 - Content Box</h2>
+
+        <div class="box1">
+            <h3>Content Box</h3>
+            <p>Width: 250px</p>
+            <p>Padding: 20px</p>
+            <p>Border: 5px solid</p>
+            <p>Margin: 25px</p>
+            <p>Box Sizing: content-box</p>
+        </div>
+
+        <h2>Box 2 - Border Box</h2>
+
+        <div class="box2">
+            <h3>Border Box</h3>
+            <p>Width: 250px</p>
+            <p>Padding: 30px</p>
+            <p>Border: 8px dashed</p>
+            <p>Margin: 35px</p>
+            <p>Box Sizing: border-box</p>
+        </div>
+
+        <h2>Box 3 - Content Box</h2>
+
+        <div class="box3">
+            <h3>Different Box Model</h3>
+            <p>Width: 300px</p>
+            <p>Padding: 15px 35px</p>
+            <p>Border: 6px double</p>
+            <p>Margin: 45px</p>
+            <p>Box Sizing: content-box</p>
+        </div>
+
+        <div class="explanation">
+            <h2>Understanding CSS Box Model</h2>
+
+            <p><strong>1. Content:</strong> Actual text or image inside the element.</p>
+
+            <p><strong>2. Padding:</strong> Space between content and border.</p>
+
+            <p><strong>3. Border:</strong> Line surrounding the padding and content.</p>
+
+            <p><strong>4. Margin:</strong> Space outside the border.</p>
+
+            <p><strong>5. Content-box:</strong> Width applies only to content.</p>
+
+            <p><strong>6. Border-box:</strong> Width includes content, padding and border.</p>
+        </div>
+
+    </div>
+
+    <footer >
+        <p>CSS Box Model Practice</p>
+    </footer>
+</div>
+</body>
+</html>
